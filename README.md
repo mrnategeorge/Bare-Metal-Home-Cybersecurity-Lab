@@ -17,11 +17,6 @@ The lab replicates a small enterprise network using a Cisco Catalyst switch, mul
 
 ![Lab Topology](docs/topology-diagram.png)
 
-**Legend**
-- 🔵 Blue: Endpoints & management
-- 🟠 Orange: Uplink & SPAN (monitoring)
-- 🟢 Green (dashed): Log flows → Splunk
-
 ## Devices and Roles
 
 - **Cisco Catalyst 3550**  
