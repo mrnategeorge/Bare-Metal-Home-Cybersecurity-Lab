@@ -1,9 +1,9 @@
 # Bare-Metal-Home-Cybersecurity-Lab
-# 🛡️ Home Cybersecurity Lab
+# Home Cybersecurity Lab
 
 This repository documents my **Home Cybersecurity Lab**, designed to simulate an enterprise environment for both **Blue Team (defensive)** and **Red Team (offensive)** training.
 
-## 📖 Overview
+## Overview
 
 The lab replicates a small enterprise network using a Cisco Catalyst switch, multiple endpoints, and security monitoring tools. It provides a platform for learning:
 
@@ -13,7 +13,7 @@ The lab replicates a small enterprise network using a Cisco Catalyst switch, mul
 - Red Team / penetration testing with Kali Linux
 - Network monitoring using SPAN/mirroring on Cisco hardware
 
-## 🖼️ Topology
+## Topology
 
 ![Lab Topology](docs/topology-diagram.png)
 
@@ -22,7 +22,7 @@ The lab replicates a small enterprise network using a Cisco Catalyst switch, mul
 - 🟠 Orange: Uplink & SPAN (monitoring)
 - 🟢 Green (dashed): Log flows → Splunk
 
-## 🖥️ Devices and Roles
+## Devices and Roles
 
 - **Cisco Catalyst 3550**  
   Acts as managed switch with SPAN configured to mirror traffic.
@@ -50,7 +50,7 @@ The lab replicates a small enterprise network using a Cisco Catalyst switch, mul
 - **Home Router**  
   Gateway to internet for updates & external connectivity.
 
-## ⚙️ Configuration Highlights
+## Configuration Highlights
 
 - **SPAN on Cisco 3550**  
   Mirrors Fa0/1 (uplink) and access ports (Fa0/2–Fa0/4) to Fa0/5 → Security Onion sniff NIC.
@@ -65,21 +65,9 @@ The lab replicates a small enterprise network using a Cisco Catalyst switch, mul
 - **Windows Server AD**  
   Provides authentication, DNS, and DHCP services.
 
-## 🚀 Use Cases
+## Use Cases
 
 - Simulating attacks with Kali and detecting with Security Onion.  
 - Correlating Security Onion IDS alerts with Splunk log data.  
 - Practicing AD administration and monitoring.  
 - Building detection rules, dashboards, and playbooks.  
-
-## 📌 Next Steps
-
-- Add VLAN segmentation for isolation.  
-- Expand Splunk use cases with more data sources.  
-- Automate deployment with Ansible/Terraform.  
-
----
-
-## 📜 License
-
-MIT
